@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form>
+        <fieldset>
+            <legend>1 Your Basic Info</legend>
+            <label for="fname">Name:</label>
+            <input type="text" name="fname">
+            <label for="fmail">Email:</label>
+            <input type="email" name="fmail">
+            <label for="fpwd">Password:</label>
+            <input type="password" name="fpwd">
+            <span>Age:</span>
+            <input type="radio" name="fage" value="Under 13" id="Under 13">
+            <label for="fage">Under 13</label>
+        </fieldset>
+        <fieldset>
+            <legend>2 Your Profile</legend>
+            <span>Bio:</span>
+            <textarea name="bio"></textarea>
+            <label for="job">Job Role:</label>
+            <select name="job" id="jobs">
+                <optgroup label="Web">
+                    <option value="FED">Front-End Developer</option>
+                    <option value="WD">Web Designer</option>
+                    <option value="WPD">Wordpress Developer</option>
+                </optgroup>
+                <optgroup label="Mobile">
+                    <option value="And">Andriod Developer</option>
+                    <option value="Ios">IOS Developer</option>
+                </optgroup>
+                <optgroup label="Business">
+                    <option value="BO">Business Owner</option>
+                    <option value="FL">Freelancer</option>
+                </optgroup>
+            </select>
+            <label>Interest:</label>
+            <input type="checkbox" name="interest" id="dev"> 
+            <label for="interest">Development</label>
+            <div>
+                <input type="checkbox" name="interest" id="design">
+                <label for="interest">Design</label>
+            </div>
+            <input type="checkbox" name="interest" id="business">
+            <label for="interest">Business</label>
+        </fieldset>
+        <button type="submit">Sign up</button>
+
+    </form>
+</body>
+</html>
